@@ -10,8 +10,8 @@ function App() {
 
   //je crée un état par interrupteur
   const [switch1, setSwitch1] = useState(false);
-  // const [switch2, setSwitch2] = useState(false);
-  // const [switch3, setSwitch3] = useState(false);
+  const [switch2, setSwitch2] = useState(false);
+  const [switch3, setSwitch3] = useState(false);
 
   return (
     <div className="App">
@@ -23,46 +23,73 @@ function App() {
       </header>
 
       <main>
+        {/* 1er bouton -----------------------*/}
+
         <div className="test">
-          {switch1 ? (
-            <div className="essai1">
-              <Button
-                onClick={() => {
-                  setSwitch1(true);
-                }}
-                color={white}
-                backGroud={violet}
-                text="ON"
-              />
-              <Button
-                onClick={() => {
-                  setSwitch1(false);
-                }}
-                color={violet}
-                backGroud={white}
-                text="OFF"
-              />
-            </div>
-          ) : (
-            <div>
-              <Button
-                onClick={() => {
-                  setSwitch1(true);
-                }}
-                color={violet}
-                backGroud={white}
-                text="ON"
-              />
-              <Button
-                onClick={() => {
-                  setSwitch1(false);
-                }}
-                color={white}
-                backGroud={violet}
-                text="OFF"
-              />
-            </div>
-          )}
+          <div className="essai1">
+            <Button
+              onClick={() => {
+                setSwitch1(true);
+              }}
+              textColor={switch1 ? white : violet}
+              backGround={switch1 ? violet : white}
+              text="ON"
+            />
+            <Button
+              onClick={() => {
+                setSwitch1(false);
+              }}
+              textColor={switch1 ? violet : white}
+              backGround={switch1 ? white : violet}
+              text="OFF"
+            />
+          </div>
+        </div>
+
+        {/* 2è bouton -----------------------*/}
+
+        <div className="test">
+          <div className="essai1">
+            <Button
+              onClick={() => {
+                setSwitch2(true);
+              }}
+              textColor={switch2 ? white : violet}
+              backGround={switch2 ? violet : white}
+              text="ON"
+            />
+            <Button
+              onClick={() => {
+                setSwitch2(false);
+              }}
+              textColor={switch2 ? violet : white}
+              backGround={switch2 ? white : violet}
+              text="OFF"
+            />
+          </div>
+        </div>
+
+        {/* 3è bouton -----------------------*/}
+
+        <div className="test">
+          <div className="essai1">
+            <Button
+              onClick={() => {
+                setSwitch3(true);
+              }}
+              textColor={switch3 ? white : violet}
+              backGround={switch3 ? violet : white}
+              text="ON"
+            />
+            <Button
+              onClick={() => {
+                setSwitch3(false);
+              }}
+              textColor={switch3 ? violet : white}
+              backGround={switch3 ? white : violet}
+              text="OFF"
+            />
+          </div>
         </div>
       </main>
 

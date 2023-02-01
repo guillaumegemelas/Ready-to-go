@@ -1,6 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+/* header -------------------------------------------------------------------------*/
+
 .logo img {
   height: 100px;
   padding-right: 50px;
@@ -13,10 +16,14 @@ header {
   font-size: 40px;
 }
 
+/* main ----------------------------------------------------------------------------*/
+
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
+
   height: 700px;
   background-color: pink;
 }
@@ -33,12 +40,19 @@ main button {
   width: 300px;
 }
 
+/* renvoie aux deux boutons cote à cote*/
 .essai1 {
   display: flex;
   background-color: white;
-  height: 200px;
+  /* height: 250px; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
 }
 
+/* footer -------------------------------------------------------------------------*/
 footer {
   display: flex;
   justify-content: center;

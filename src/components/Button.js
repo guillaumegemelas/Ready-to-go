@@ -3,8 +3,8 @@ const Button = ({ textColor, backGround, text, onClick }) => {
     <div>
       <button
         onClick={onClick}
-        className="switch1"
-        style={{ color: textColor, backgroudColor: backGround }}
+        className="switchMode"
+        style={{ color: textColor, backgroundColor: backGround }}
       >
         {text}
       </button>
