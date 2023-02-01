@@ -5,12 +5,13 @@ body {
 /* header -------------------------------------------------------------------------*/
 
 .logo img {
-  height: 100px;
+  height: 90px;
   padding-right: 50px;
 }
 
 header {
   display: flex;
+  /* background-color: pink; */
   align-items: center;
   height: 150px;
   font-size: 40px;

@@ -1,12 +1,15 @@
 import "./App.css";
 import { useState } from "react";
-import logo from "../src/img/logo.png";
+import logo1 from "../src/img/logo1.png";
 import Button from "./components/Button";
+import BigButton from "./components/BigButton";
 
 function App() {
   //je crée les variables color
   const violet = "#5c48d3";
   const white = "#ffffff";
+  const red = "#D34848";
+  const green = "#46AC4A";
 
   //je crée un état par interrupteur
   const [switch1, setSwitch1] = useState(false);
@@ -17,7 +20,7 @@ function App() {
     <div className="App">
       <header>
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo1} alt="" />
         </div>
         <h1>Ready to Go</h1>
       </header>
@@ -98,10 +101,11 @@ function App() {
         <div className="secondcol">
           {/* il va falloir faire les conditions pour que le bouton change en fct° des clics 
           tous les switchs des boutons doivent être à true */}
-
-          <button text={switch1 ? "OK" : "NO"}>
-            <p>No way!</p>
-          </button>
+          {!switch1 || !switch2 || !switch3 ? (
+            <BigButton textColor={white} backGround={red} text="No Way!" />
+          ) : (
+            <BigButton textColor={white} backGround={green} text="Go!" />
+          )}
         </div>
       </main>
 
