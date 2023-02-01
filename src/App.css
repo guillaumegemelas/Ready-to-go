@@ -32,6 +32,7 @@ main button {
   height: 50px;
   width: 80px;
   font-size: 25px;
+  box-shadow: 10px 5px 5px lightgray;
 }
 .test {
   background-color: rgb(198, 227, 207);
@@ -56,6 +57,7 @@ main button {
   height: 100px;
   width: 150px;
   margin-left: 300px;
+  box-shadow: 10px 5px 5px lightgray;
 }
 
 .reset button {
@@ -63,6 +65,7 @@ main button {
   background-color: rgb(208, 225, 188);
   margin-left: 120px;
   height: 60px;
+  box-shadow: 10px 5px 5px lightgray;
 }
 
 /* footer -------------------------------------------------------------------------*/
