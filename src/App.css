@@ -16,8 +16,27 @@ header {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
   height: 700px;
+  background-color: pink;
+}
+
+main button {
+  height: 50px;
+  width: 80px;
+  font-size: 25px;
+}
+.test {
+  background-color: rgb(198, 227, 207);
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+.essai1 {
+  display: flex;
+  background-color: white;
+  height: 200px;
 }
 
 footer {
@@ -27,18 +46,4 @@ footer {
 }
 footer span {
   font-weight: bold;
-}
-
-main button {
-  height: 50px;
-  width: 80px;
-  font-size: 25px;
-}
-
-.swith12 {
-  background-color: #5c48d3;
-}
-
-.switch122 {
-  background-color: white;
 }

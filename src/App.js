@@ -1,12 +1,17 @@
 import "./App.css";
 import { useState } from "react";
 import logo from "../src/img/logo.png";
+import Button from "./components/Button";
 
 function App() {
+  //je crée les variables color
+  const violet = "#5c48d3";
+  const white = "#ffffff";
+
   //je crée un état par interrupteur
   const [switch1, setSwitch1] = useState(false);
-  const [switch2, setSwitch2] = useState(false);
-  const [switch3, setSwitch3] = useState(false);
+  // const [switch2, setSwitch2] = useState(false);
+  // const [switch3, setSwitch3] = useState(false);
 
   return (
     <div className="App">
@@ -18,14 +23,47 @@ function App() {
       </header>
 
       <main>
-        <button
-          className="switch1"
-          onClick={() => {
-            setSwitch1(!switch1);
-          }}
-        >
-          ON
-        </button>
+        <div className="test">
+          {switch1 ? (
+            <div className="essai1">
+              <Button
+                onClick={() => {
+                  setSwitch1(true);
+                }}
+                color={white}
+                backGroud={violet}
+                text="ON"
+              />
+              <Button
+                onClick={() => {
+                  setSwitch1(false);
+                }}
+                color={violet}
+                backGroud={white}
+                text="OFF"
+              />
+            </div>
+          ) : (
+            <div>
+              <Button
+                onClick={() => {
+                  setSwitch1(true);
+                }}
+                color={violet}
+                backGroud={white}
+                text="ON"
+              />
+              <Button
+                onClick={() => {
+                  setSwitch1(false);
+                }}
+                color={white}
+                backGroud={violet}
+                text="OFF"
+              />
+            </div>
+          )}
+        </div>
       </main>
 
       <footer>
