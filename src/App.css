@@ -20,12 +20,11 @@ header {
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   height: 700px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 main button {
@@ -50,6 +49,12 @@ main button {
   align-items: center;
   gap: 20px;
   padding-bottom: 40px;
+}
+
+.secondcol button {
+  height: 100px;
+  width: 150px;
+  margin-left: 300px;
 }
 
 /* footer -------------------------------------------------------------------------*/
