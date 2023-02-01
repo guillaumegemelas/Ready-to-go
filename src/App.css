@@ -58,6 +58,13 @@ main button {
   margin-left: 300px;
 }
 
+.reset button {
+  font-size: 20px;
+  background-color: rgb(208, 225, 188);
+  margin-left: 120px;
+  height: 60px;
+}
+
 /* footer -------------------------------------------------------------------------*/
 footer {
   display: flex;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo1 from "../src/img/logo1.png";
 import Button from "./components/Button";
 import BigButton from "./components/BigButton";
+import ResetButton from "./components/ResetButton";
 
 function App() {
   //je crée les variables color
@@ -106,6 +107,17 @@ function App() {
           ) : (
             <BigButton textColor={white} backGround={green} text="Go!" />
           )}
+        </div>
+
+        <div className="reset">
+          <ResetButton
+            onClick={() => {
+              setSwitch1(false);
+              setSwitch2(false);
+              setSwitch3(false);
+            }}
+            text="RESET ⚠️"
+          />
         </div>
       </main>
 
